@@ -6,6 +6,8 @@ services:
         WORKDIR: ${WORKDIR}
         API_URL: "http://localhost:${API_PORT}/"
     container_name: front-api-docker-front
+    env_file:
+      - ./environment/react-app-variables.env
     command: sh -c "npm run dev"
     volumes:
       - .:/${WORKDIR}
