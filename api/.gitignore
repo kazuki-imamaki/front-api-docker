@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+
+dbdata
+
+pgadmin4/sessions
